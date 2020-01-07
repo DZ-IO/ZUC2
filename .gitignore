@@ -126,11 +126,11 @@ dmypy.json
 example.ini
 temp.ini
 cache/*
-#engine/*
+#engine/*/*
 engine/RUCE-1.0.0-alpha2/*.exe
 engine/RUCE-1.0.0-alpha2/*.dll
 engine/RUCE-1.0.0-alpha2/*.txt
 engine/RUCE-1.0.0-alpha2/LICENSE
-wavtool/*
-voice/*
+wavtool/*/*
+voice/*/*
 output.wav
