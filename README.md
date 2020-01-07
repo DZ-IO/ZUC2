@@ -36,9 +36,9 @@ ps:也可以使用命令：
 ~~`&& cd ../ && cd ../ && cd ../`~~  
 由于Linux版RUCE存在~~BUG~~特性，所以这里使用Windows版RUCE  
 `$ sudo apt-get install wine \`  
-`&& wget http://rocaloid.github.io/resources/binaries/RUCE-1.0.0-alpha2.zip \`
-`&& unzip RUCE-1.0.0-alpha2.zip -d ./engine \`
-`&& rm RUCE-1.0.0-alpha2.zip`
+`&& wget http://rocaloid.github.io/resources/binaries/RUCE-1.0.0-alpha2.zip \`  
+`&& unzip RUCE-1.0.0-alpha2.zip -d ./engine \`  
+`&& rm RUCE-1.0.0-alpha2.zip`  
 #### 0x05 合成
 `$ python3 ucore.py example.ust`  
 输出文件为`output.wav`  
