@@ -121,3 +121,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# temp file
+example.ini
+temp.ini
+cache/*
+engine/*
+wavtool/*
+voice/*
+output.wav
