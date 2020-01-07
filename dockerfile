@@ -14,4 +14,6 @@ RUN apt-get update \
 && cp ./wavtool-yawu ../wavtool/ && cd .. \
 && rm -rf wavtool-yawu/ \
 && sudo apt-get install wine \
-&& wget http://rocaloid.github.io/resources/binaries/RUCE-1.0.0-alpha2.zip \ && unzip RUCE-1.0.0-alpha2.zip -d ./engine \ && rm RUCE-1.0.0-alpha2.zip
+&& wget http://rocaloid.github.io/resources/binaries/RUCE-1.0.0-alpha2.zip \
+&& unzip RUCE-1.0.0-alpha2.zip -d ./engine \
+&& rm RUCE-1.0.0-alpha2.zip
