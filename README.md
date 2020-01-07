@@ -10,19 +10,16 @@ UCore V2-UCore第二版，完全使用python重构的UCore
 `git clone https://github.com/daze456/UCore2.git`
 #### 0x02 准备音源：  
 1. 从[这里](https://daze456.github.io/zew/data/ZeW_Bata_0.1.0.191225.7z)下载泽小白数据  
-2. 解压缩到仓库下的voice文件夹
-#### 0x03 准备引擎
+2. 解压缩到仓库下的voice文件夹  
+ps:也可以使用命令：  
+`$ wget https://daze456.github.io/zew/data/ZeW_Bata_0.1.0.191225.7z`  
+`&& 7z x ZeW_Bata_0.1.0.191225.7z -r -o./voice/ZeW_Bata_0.1.0.191225 \`  
+`&& rm -rf ZeW_Bata_0.1.0.191225.7z \`  
+#### 0x03 准备wavtool
 1. 安装cmake  
 `# apt-get update \`  
 `&& apt-get install -y cmake build-essential`
-2. 下载并编译RUCE  
-`$ cd engine \`  
-`&& git clone https://github.com/Rocaloid/RUCE.git \`    
-`&& cd RUCE \`  
-`&& ./configure \`  
-`&& cd build && make \`  
-`&& cd ../ && cd ../ && cd ../`  
-3. 下载并编译wavtool  
+2. 下载并编译wavtool  
 `$ git clone https://github.com/m13253/wavtool-yawu.git \`    
 `&& cd wavtool-yawu \`  
 `&& ./configure \`  
@@ -30,7 +27,19 @@ UCore V2-UCore第二版，完全使用python重构的UCore
 `&& cp ./wavtool-yawu ../ && cd .. \`  
 `&& cp ./wavtool-yawu ../wavtool/ && cd .. \`  
 `&& rm -rf wavtool-yawu/`
-##### 0x04 合成
+#### 0x04 准备引擎（RUCE） 
+~~`$ cd engine \`~~  
+~~`&& git clone https://github.com/Rocaloid/RUCE.git \`~~    
+~~`&& cd RUCE \`~~  
+~~`&& ./configure \`~~  
+~~`&& cd build && make \`~~  
+~~`&& cd ../ && cd ../ && cd ../`~~  
+由于Linux版RUCE存在~~BUG~~特性，所以这里使用Windows版RUCE  
+`$ sudo apt-get install wine \`  
+`&& wget http://rocaloid.github.io/resources/binaries/RUCE-1.0.0-alpha2.zip \`
+`&& unzip RUCE-1.0.0-alpha2.zip -d ./engine \`
+`&& rm RUCE-1.0.0-alpha2.zip`
+#### 0x05 合成
 `$ python3 ucore.py example.ust`  
 输出文件为`output.wav`  
 
