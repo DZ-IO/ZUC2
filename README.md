@@ -14,7 +14,7 @@ UCore V2-UCore第二版，完全使用python重构的UCore
 ps:也可以使用命令：  
 `$ wget https://daze456.github.io/zew/data/ZeW_Bata_0.1.0.191225.7z`  
 `&& 7z x ZeW_Bata_0.1.0.191225.7z -r -o./voice/ZeW_Bata_0.1.0.191225 \`  
-`&& rm -rf ZeW_Bata_0.1.0.191225.7z \`  
+`&& rm -rf ZeW_Bata_0.1.0.191225.7z`  
 #### 0x03 准备wavtool
 1. 安装cmake  
 `# apt-get update \`  
