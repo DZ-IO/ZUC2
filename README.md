@@ -6,8 +6,8 @@ UCore V2-UCore第二版，完全使用python重构的UCore
 1. 安装git和python  
 `# apt-get update \`  
 `&& apt-get install -y python3 git python3-pip`
-2. git clone  
-`git clone https://github.com/daze456/UCore2.git`
+2. git clone!  
+`git clone https://github.com/daze456/UCore2.git && cd UCore2`
 #### 0x02 准备音源：  
 1. 从[这里](https://daze456.github.io/zew/data/ZeW_Bata_0.1.0.191225.7z)下载泽小白数据  
 2. 解压缩到仓库下的voice文件夹  
