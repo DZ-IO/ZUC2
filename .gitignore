@@ -125,7 +125,8 @@ dmypy.json
 # temp file
 example.ini
 temp.ini
-cache/*
+cache/*.ini
+cache/*.wav
 #engine/*/*
 engine/RUCE-1.0.0-alpha2/*.exe
 engine/RUCE-1.0.0-alpha2/*.dll
