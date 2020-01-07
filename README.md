@@ -12,7 +12,7 @@ UCore V2-UCore第二版，完全使用python重构的UCore
 1. 从[这里](https://daze456.github.io/zew/data/ZeW_Bata_0.1.0.191225.7z)下载泽小白数据  
 2. 解压缩到仓库下的voice文件夹  
 ps:也可以使用命令：  
-`$ wget https://daze456.github.io/zew/data/ZeW_Bata_0.1.0.191225.7z`  
+`$ wget https://daze456.github.io/zew/data/ZeW_Bata_0.1.0.191225.7z \`  
 `&& 7z x ZeW_Bata_0.1.0.191225.7z -r -o./voice/ZeW_Bata_0.1.0.191225 \`  
 `&& rm -rf ZeW_Bata_0.1.0.191225.7z`  
 #### 0x03 准备wavtool
