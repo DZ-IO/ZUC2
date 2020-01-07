@@ -4,21 +4,21 @@
 import sys,configparser,os,easyust
 
 if len(sys.argv) == 1:
-    print('[INFO] 用法：python3 ucore.py <UST> [Singer] [output]')
+    print('[INFO] 用法：python3 zuc.py <UST> [Singer] [output]')
 else:
     conf = configparser.ConfigParser()
     conf.read('cfg.ini')
     if len(sys.argv) == 3:
         oto = os.path.abspath(sys.argv[2])
     else:
-        oto = os.path.abspath(conf.get('ucore','oto'))
-    tool = os.path.abspath(conf.get('ucore','tool'))
-    resamp = os.path.abspath(conf.get('ucore','resamp'))
-    cachedir = os.path.abspath(conf.get('ucore','cachedir'))
+        oto = os.path.abspath(conf.get('zuc','oto'))
+    tool = os.path.abspath(conf.get('zuc','tool'))
+    resamp = os.path.abspath(conf.get('zuc','resamp'))
+    cachedir = os.path.abspath(conf.get('zuc','cachedir'))
     if len(sys.argv) == 4:
         output = os.path.abspath(sys.argv[3])
     else:
-        output = os.path.abspath(conf.get('ucore','output'))
+        output = os.path.abspath(conf.get('zuc','output'))
     print('[INFO] 系统信息：')
     print('[INFO] 音源路径：',oto)
     print('[INFO] wavtool路径：',tool)

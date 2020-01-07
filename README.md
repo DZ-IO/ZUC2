@@ -1,5 +1,5 @@
-# UCore2
-UCore V2-UCore第二版，完全使用python重构的UCore
+# ZdaUTAUCore2
+泽大U核心第二版，完全使用python重构的U核心
 ## 快速开始
 （这次大泽依然在仓库里扔了一枚一毛一样的UST工程）  
 #### 0x01 准备本体：
@@ -7,7 +7,7 @@ UCore V2-UCore第二版，完全使用python重构的UCore
 `# apt-get update \`  
 `&& apt-get install -y python3 git python3-pip`
 2. git clone!  
-`$ git clone https://github.com/daze456/UCore2.git && cd UCore2`
+`$ git clone https://github.com/daze456/ZdaUTAUCore2.git && cd ZdaUTAUCore2`
 #### 0x02 准备音源：  
 1. 从[这里](https://daze456.github.io/zew/data/ZeW_Bata_0.1.0.191225.7z)下载泽小白数据  
 2. 解压缩到仓库下的voice文件夹  
@@ -40,14 +40,14 @@ ps:也可以使用命令：
 `&& unzip RUCE-1.0.0-alpha2.zip -d ./engine \`  
 `&& rm RUCE-1.0.0-alpha2.zip`  
 #### 0x05 合成
-`$ python3 ucore.py example.ust`  
+`$ python3 zuc.py example.ust`  
 输出文件为`output.wav`  
 
 话说各位注意到那个`dockerfile`了吗？（可能有BUG，所以没公开）  
 ## 配置文件
 配置文件:`cfg.ini`,跟UC1差不多  
-`;UCore配置文件开始`  
-`[ucore]`  
+`;泽大U核心配置文件开始`  
+`[zuc]`  
 `;设置默认使用的声库`  
 `oto=./voice/ZeW_Bata_0.1.0.191225`  
 `;设置默认wavtool（工具1）`  
@@ -58,10 +58,10 @@ ps:也可以使用命令：
 `cachedir=./cache`  
 `;设置输出文件`  
 `output=./output.wav`  
-`;UCore配置文件结束`  
+`;泽大U核心配置文件结束`  
 注：由于easyust存在~~特性~~BUG，所以在这里没有可选参数，而且参数以配置文件为准，请认真填写
 ## 使用方法
-`$ python3 ucore.py <UST> [Singer] [output]`  
+`$ python3 zuc.py <UST> [Singer] [output]`  
 `UST：输入文件`  
 `Singer：歌姬`  
 `output：输出文件`
