@@ -1,4 +1,4 @@
-#'/usr/python3
+#/usr/python3
 # -*- coding:utf-8 -*-
 
 import sys,configparser,os,easyust
