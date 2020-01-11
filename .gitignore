@@ -123,6 +123,7 @@ dmypy.json
 .pyre/
 
 # temp file
+easyust
 example.ini
 temp.ini
 cache/*.ini
@@ -133,5 +134,6 @@ engine/RUCE-1.0.0-alpha2/*.dll
 engine/RUCE-1.0.0-alpha2/*.txt
 engine/RUCE-1.0.0-alpha2/LICENSE
 wavtool/*/*
+wavtool/wavtool*
 voice/*/*
 output.wav
